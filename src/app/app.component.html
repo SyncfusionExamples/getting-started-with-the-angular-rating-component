@@ -1,0 +1,8 @@
+<input ejs-rating id="rating" value="3" 
+showLabel="true" 
+allowReset="true" labelTemplate="<span>${value} out of 5</span>"
+tooltipTemplate="<span>${value} star</span>"
+[emptyTemplate]="emptyTemplate"/>
+<ng-template #emptyTemplate>
+  <span class="custom-font sf-rating-heart"></span>
+</ng-template>
